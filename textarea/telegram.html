@@ -1,0 +1,246 @@
+<div class="Composer is-chat-composer shown mounted">
+  <div class="composer-wrapper">
+    <div class="message-input-wrapper peer-color-4">
+      <div class="AttachMenu">
+        <button
+          id="attach-menu-button"
+          type="button"
+          class="Button AttachMenu--button composer-action-button default translucent round"
+          aria-label="Add attachment"
+          aria-controls="attach-menu-controls"
+          aria-haspopup="true"
+          title="Add attachment"
+        >
+          <i class="icon icon-attach" aria-hidden="true"></i>
+        </button>
+        <div
+          id="attach-menu-controls"
+          class="Menu compact AttachMenu--menu fluid"
+          aria-labelledby="attach-menu-button"
+          role="menu"
+        >
+          <div
+            role="presentation"
+            class="bubble menu-container custom-scroll opacity-transition fast not-shown not-open"
+          >
+            <div role="menuitem" tabindex="0" class="MenuItem compact">
+              <i class="icon icon-media" aria-hidden="true"></i>Photo or Video
+            </div>
+            <div role="menuitem" tabindex="0" class="MenuItem compact">
+              <i class="icon icon-document" aria-hidden="true"></i>File
+            </div>
+            <div role="menuitem" tabindex="0" class="MenuItem compact">
+              <i class="icon icon-music" aria-hidden="true"></i>Music
+            </div>
+            <div role="menuitem" tabindex="0" class="MenuItem compact">
+              <i class="icon icon-select" aria-hidden="true"></i>Checklist
+            </div>
+            <div role="menuitem" tabindex="0" class="MenuItem compact">
+              <i class="icon icon-calendar" aria-hidden="true"></i>Date
+            </div>
+            <div role="menuitem" tabindex="0" class="MenuItem compact">
+              <i class="icon icon-article" aria-hidden="true"></i>Article
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rich-editor-history" aria-hidden="true" inert="">
+        <button
+          type="button"
+          class="Button smaller translucent round disabled faded"
+          disabled=""
+          aria-label="Undo"
+          title="Undo"
+        >
+          <i class="icon icon-undo" aria-hidden="true"></i></button
+        ><button
+          type="button"
+          class="Button smaller translucent round disabled faded"
+          disabled=""
+          aria-label="Redo"
+          title="Redo"
+        >
+          <i class="icon icon-redo" aria-hidden="true"></i>
+        </button>
+      </div>
+      <button
+        type="button"
+        class="Button rich-editor-button rich-editor-button-hidden smaller translucent round faded"
+        aria-label="Open full editor"
+        title="Open full editor"
+        tabindex="-1"
+      >
+        <i class="icon icon-expand" aria-hidden="true"></i></button
+      ><button
+        type="button"
+        class="Button ai-composer-button ai-composer-button-hidden smaller translucent round faded"
+        aria-label="AI Editor"
+        title="AI Editor"
+        tabindex="-1"
+      >
+        <i class="icon icon-ai" aria-hidden="true"></i>
+      </button>
+      <div id="message-input-text">
+        <div class="shared-canvas-container">
+          <canvas class="shared-canvas"></canvas
+          ><canvas class="shared-canvas"></canvas>
+          <div
+            class="custom-scroll input-scroller"
+            style="height: 40px; transition-duration: 184ms"
+          >
+            <div class="input-scroller-content" data-stricterdom-ignore="true">
+              <div
+                id="editable-message-text"
+                class="form-control allow-selection touched NKP0M5xy ProseMirror"
+                contenteditable="true"
+                role="textbox"
+                aria-disabled="false"
+                dir="auto"
+                tabindex="0"
+                aria-label="Message"
+                translate="no"
+              >
+                <p class="_1QaUCKo0">sdjkvndjk</p>
+              </div>
+              <span class="placeholder-text" dir="auto">Message</span>
+            </div>
+          </div>
+        </div>
+        <div aria-hidden="true" class="custom-scroll input-scroller clone">
+          <div class="input-scroller-content" data-stricterdom-ignore="true">
+            <div
+              class="form-control allow-selection touched NKP0M5xy clone lTDaAF9S"
+              dir="auto"
+            >
+              <p class="_1QaUCKo0">sdjkvndjk</p>
+            </div>
+          </div>
+        </div>
+        <div class="rich-editor-toolbar-viewport" aria-hidden="true" inert="">
+          <div class="rich-editor-toolbar">
+            <button
+              type="button"
+              class="Button default translucent disabled"
+              disabled=""
+              aria-label="AI Editor"
+              title="AI Editor"
+            >
+              <i class="icon icon-ai" aria-hidden="true"></i>
+            </button>
+            <div class="DropdownMenu rich-editor-toolbar-menu">
+              <button
+                type="button"
+                class="Button default translucent disabled"
+                disabled=""
+                aria-label="Insert block"
+                title="Insert block"
+              >
+                <i class="icon icon-add" aria-hidden="true"></i>
+              </button>
+            </div>
+            <div class="DropdownMenu rich-editor-toolbar-menu">
+              <button
+                type="button"
+                class="Button default translucent disabled"
+                disabled=""
+                aria-label="Lists"
+                title="Lists"
+              >
+                <i
+                  class="icon icon-bullet-list U8lIhBQ6"
+                  aria-hidden="true"
+                ></i>
+              </button>
+            </div>
+            <button
+              type="button"
+              class="Button default translucent disabled"
+              disabled=""
+              aria-label="Table"
+              title="Table"
+            >
+              <i
+                class="icon icon-table U8lIhBQ6"
+                aria-hidden="true"
+              ></i></button
+            ><button
+              type="button"
+              class="Button default translucent disabled"
+              disabled=""
+              aria-label="Add Link"
+              title="Add Link"
+            >
+              <i class="icon icon-link" aria-hidden="true"></i></button
+            ><button
+              type="button"
+              class="Button default translucent disabled"
+              disabled=""
+              aria-label="Code block"
+              title="Code block"
+            >
+              <i class="icon icon-code" aria-hidden="true"></i></button
+            ><button
+              type="button"
+              class="Button default translucent disabled"
+              disabled=""
+              aria-label="Formula"
+              title="Formula"
+            >
+              <i class="icon icon-formula U8lIhBQ6" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="Transition composer-action-buttons-container">
+        <div
+          class="Transition_slide composer-action-buttons Transition_slide-inactive"
+        ></div>
+      </div>
+      <button
+        type="button"
+        class="Button composer-action-button symbol-menu-button default translucent round"
+        aria-label="Choose emoji, sticker or GIF"
+        title="Choose emoji, sticker or GIF"
+      >
+        <div class="symbol-menu-trigger"></div>
+        <i class="icon icon-smile" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+  <button
+    type="button"
+    class="Button send main-button default secondary round click-allowed"
+    aria-label="Send Message"
+    title="Send Message"
+  >
+    <i class="icon icon-new-send main-button-state-icon" aria-hidden="true"></i
+    ><i
+      class="icon icon-stop-square main-button-state-icon"
+      aria-hidden="true"
+    ></i
+    ><i
+      class="icon icon-microphone main-button-state-icon main-button-microphone"
+      aria-hidden="true"
+    ></i
+    ><i
+      class="icon icon-round-video main-button-state-icon"
+      aria-hidden="true"
+    ></i
+    ><i class="icon icon-schedule main-button-state-icon" aria-hidden="true"></i
+    ><i class="icon icon-check main-button-state-icon" aria-hidden="true"></i>
+  </button>
+  <div class="Menu compact fluid">
+    <div
+      role="presentation"
+      class="bubble menu-container custom-scroll opacity-transition fast not-shown not-open"
+    >
+      <div role="menuitem" tabindex="0" class="MenuItem compact">
+        <i class="icon icon-microphone" aria-hidden="true"></i>Voice Message
+      </div>
+      <div role="menuitem" tabindex="0" class="MenuItem compact">
+        <i class="icon icon-round-video" aria-hidden="true"></i>Video Message
+      </div>
+    </div>
+  </div>
+  <div class="rich-editor-tooltips-host" style="visibility: hidden"></div>
+</div>
